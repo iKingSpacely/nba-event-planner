@@ -1,0 +1,251 @@
+0
+: 
+{date: '2021-10-19T19:30:00', day: '2021-10-19T00:00:00', homeTeam: 'MIL', homeScore: 127, awayTeam: 'BKN', …}
+1
+: 
+{date: '2021-10-21T20:00:00', day: '2021-10-21T00:00:00', homeTeam: 'MIA', homeScore: 137, awayTeam: 'MIL', …}
+2
+: 
+{date: '2021-10-23T20:30:00', day: '2021-10-23T00:00:00', homeTeam: 'SA', homeScore: 111, awayTeam: 'MIL', …}
+3
+: 
+{date: '2021-10-25T19:00:00', day: '2021-10-25T00:00:00', homeTeam: 'IND', homeScore: 109, awayTeam: 'MIL', …}
+4
+: 
+{date: '2021-10-27T20:00:00', day: '2021-10-27T00:00:00', homeTeam: 'MIL', homeScore: 108, awayTeam: 'MIN', …}
+5
+: 
+{date: '2021-10-30T20:00:00', day: '2021-10-30T00:00:00', homeTeam: 'MIL', homeScore: 93, awayTeam: 'SA', …}
+6
+: 
+{date: '2021-10-31T19:00:00', day: '2021-10-31T00:00:00', homeTeam: 'MIL', homeScore: 95, awayTeam: 'UTA', …}
+7
+: 
+{date: '2021-11-02T19:00:00', day: '2021-11-02T00:00:00', homeTeam: 'DET', homeScore: 89, awayTeam: 'MIL', …}
+8
+: 
+{date: '2021-11-05T19:30:00', day: '2021-11-05T00:00:00', homeTeam: 'MIL', homeScore: 98, awayTeam: 'NY', …}
+9
+: 
+{date: '2021-11-07T18:00:00', day: '2021-11-07T00:00:00', homeTeam: 'WAS', homeScore: 101, awayTeam: 'MIL', …}
+10
+: 
+{date: '2021-11-09T19:30:00', day: '2021-11-09T00:00:00', homeTeam: 'PHI', homeScore: 109, awayTeam: 'MIL', …}
+11
+: 
+{date: '2021-11-10T19:30:00', day: '2021-11-10T00:00:00', homeTeam: 'NY', homeScore: 100, awayTeam: 'MIL', …}
+12
+: 
+{date: '2021-11-12T19:30:00', day: '2021-11-12T00:00:00', homeTeam: 'BOS', homeScore: 122, awayTeam: 'MIL', …}
+13
+: 
+{date: '2021-11-14T18:00:00', day: '2021-11-14T00:00:00', homeTeam: 'ATL', homeScore: 120, awayTeam: 'MIL', …}
+14
+: 
+{date: '2021-11-17T19:30:00', day: '2021-11-17T00:00:00', homeTeam: 'MIL', homeScore: 109, awayTeam: 'LAL', …}
+15
+: 
+{date: '2021-11-19T20:00:00', day: '2021-11-19T00:00:00', homeTeam: 'MIL', homeScore: 96, awayTeam: 'OKC', …}
+16
+: 
+{date: '2021-11-20T20:00:00', day: '2021-11-20T00:00:00', homeTeam: 'MIL', homeScore: 117, awayTeam: 'ORL', …}
+17
+: 
+{date: '2021-11-22T20:00:00', day: '2021-11-22T00:00:00', homeTeam: 'MIL', homeScore: 123, awayTeam: 'ORL', …}
+18
+: 
+{date: '2021-11-24T20:00:00', day: '2021-11-24T00:00:00', homeTeam: 'MIL', homeScore: 114, awayTeam: 'DET', …}
+19
+: 
+{date: '2021-11-26T21:00:00', day: '2021-11-26T00:00:00', homeTeam: 'DEN', homeScore: 109, awayTeam: 'MIL', …}
+20
+: 
+{date: '2021-11-28T17:00:00', day: '2021-11-28T00:00:00', homeTeam: 'IND', homeScore: 100, awayTeam: 'MIL', …}
+21
+: 
+{date: '2021-12-01T20:00:00', day: '2021-12-01T00:00:00', homeTeam: 'MIL', homeScore: 127, awayTeam: 'CHA', …}
+22
+: 
+{date: '2021-12-02T19:30:00', day: '2021-12-02T00:00:00', homeTeam: 'TOR', homeScore: 97, awayTeam: 'MIL', …}
+23
+: 
+{date: '2021-12-04T20:00:00', day: '2021-12-04T00:00:00', homeTeam: 'MIL', homeScore: 124, awayTeam: 'MIA', …}
+24
+: 
+{date: '2021-12-06T20:00:00', day: '2021-12-06T00:00:00', homeTeam: 'MIL', homeScore: 112, awayTeam: 'CLE', …}
+25
+: 
+{date: '2021-12-08T19:30:00', day: '2021-12-08T00:00:00', homeTeam: 'MIA', homeScore: 113, awayTeam: 'MIL', …}
+26
+: 
+{date: '2021-12-10T20:00:00', day: '2021-12-10T00:00:00', homeTeam: 'HOU', homeScore: 114, awayTeam: 'MIL', …}
+27
+: 
+{date: '2021-12-12T12:00:00', day: '2021-12-12T00:00:00', homeTeam: 'NY', homeScore: 97, awayTeam: 'MIL', …}
+28
+: 
+{date: '2021-12-13T19:30:00', day: '2021-12-13T00:00:00', homeTeam: 'BOS', homeScore: 117, awayTeam: 'MIL', …}
+29
+: 
+{date: '2021-12-15T20:00:00', day: '2021-12-15T00:00:00', homeTeam: 'MIL', homeScore: 114, awayTeam: 'IND', …}
+30
+: 
+{date: '2021-12-17T20:00:00', day: '2021-12-17T00:00:00', homeTeam: 'NO', homeScore: 116, awayTeam: 'MIL', …}
+31
+: 
+{date: '2021-12-18T21:00:00', day: '2021-12-18T00:00:00', homeTeam: 'MIL', homeScore: 90, awayTeam: 'CLE', …}
+32
+: 
+{date: '2021-12-22T20:00:00', day: '2021-12-22T00:00:00', homeTeam: 'MIL', homeScore: 126, awayTeam: 'HOU', …}
+33
+: 
+{date: '2021-12-23T20:30:00', day: '2021-12-23T00:00:00', homeTeam: 'DAL', homeScore: 95, awayTeam: 'MIL', …}
+34
+: 
+{date: '2021-12-25T14:30:00', day: '2021-12-25T00:00:00', homeTeam: 'MIL', homeScore: 117, awayTeam: 'BOS', …}
+35
+: 
+{date: '2021-12-28T19:00:00', day: '2021-12-28T00:00:00', homeTeam: 'ORL', homeScore: 110, awayTeam: 'MIL', …}
+36
+: 
+{date: '2021-12-30T19:00:00', day: '2021-12-30T00:00:00', homeTeam: 'ORL', homeScore: 118, awayTeam: 'MIL', …}
+37
+: 
+{date: '2022-01-01T18:30:00', day: '2022-01-01T00:00:00', homeTeam: 'MIL', homeScore: 136, awayTeam: 'NO', …}
+38
+: 
+{date: '2022-01-03T20:00:00', day: '2022-01-03T00:00:00', homeTeam: 'MIL', homeScore: 106, awayTeam: 'DET', …}
+39
+: 
+{date: '2022-01-05T20:00:00', day: '2022-01-05T00:00:00', homeTeam: 'MIL', homeScore: 111, awayTeam: 'TOR', …}
+40
+: 
+{date: '2022-01-07T19:30:00', day: '2022-01-07T00:00:00', homeTeam: 'BKN', homeScore: 109, awayTeam: 'MIL', …}
+41
+: 
+{date: '2022-01-08T19:00:00', day: '2022-01-08T00:00:00', homeTeam: 'CHA', homeScore: 114, awayTeam: 'MIL', …}
+42
+: 
+{date: '2022-01-10T19:00:00', day: '2022-01-10T00:00:00', homeTeam: 'CHA', homeScore: 103, awayTeam: 'MIL', …}
+43
+: 
+{date: '2022-01-13T19:30:00', day: '2022-01-13T00:00:00', homeTeam: 'MIL', homeScore: 118, awayTeam: 'GS', …}
+44
+: 
+{date: '2022-01-15T18:30:00', day: '2022-01-15T00:00:00', homeTeam: 'MIL', homeScore: 96, awayTeam: 'TOR', …}
+45
+: 
+{date: '2022-01-17T18:00:00', day: '2022-01-17T00:00:00', homeTeam: 'ATL', homeScore: 121, awayTeam: 'MIL', …}
+46
+: 
+{date: '2022-01-19T20:00:00', day: '2022-01-19T00:00:00', homeTeam: 'MIL', homeScore: 126, awayTeam: 'MEM', …}
+47
+: 
+{date: '2022-01-21T20:00:00', day: '2022-01-21T00:00:00', homeTeam: 'MIL', homeScore: 94, awayTeam: 'CHI', …}
+48
+: 
+{date: '2022-01-22T19:00:00', day: '2022-01-22T00:00:00', homeTeam: 'MIL', homeScore: 133, awayTeam: 'SAC', …}
+49
+: 
+{date: '2022-01-26T19:00:00', day: '2022-01-26T00:00:00', homeTeam: 'CLE', homeScore: 115, awayTeam: 'MIL', …}
+50
+: 
+{date: '2022-01-28T22:00:00', day: '2022-01-28T00:00:00', homeTeam: 'MIL', homeScore: 123, awayTeam: 'NY', …}
+51
+: 
+{date: '2022-01-30T19:00:00', day: '2022-01-30T00:00:00', homeTeam: 'MIL', homeScore: 100, awayTeam: 'DEN', …}
+52
+: 
+{date: '2022-02-01T19:30:00', day: '2022-02-01T00:00:00', homeTeam: 'MIL', homeScore: 112, awayTeam: 'WAS', …}
+53
+: 
+{date: '2022-02-05T22:00:00', day: '2022-02-05T00:00:00', homeTeam: 'POR', homeScore: 108, awayTeam: 'MIL', …}
+54
+: 
+{date: '2022-02-06T21:00:00', day: '2022-02-06T00:00:00', homeTeam: 'LAC', homeScore: 113, awayTeam: 'MIL', …}
+55
+: 
+{date: '2022-02-08T22:00:00', day: '2022-02-08T00:00:00', homeTeam: 'LAL', homeScore: 116, awayTeam: 'MIL', …}
+56
+: 
+{date: '2022-02-10T22:00:00', day: '2022-02-10T00:00:00', homeTeam: 'PHO', homeScore: 131, awayTeam: 'MIL', …}
+57
+: 
+{date: '2022-02-14T20:00:00', day: '2022-02-14T00:00:00', homeTeam: 'MIL', homeScore: 107, awayTeam: 'POR', …}
+58
+: 
+{date: '2022-02-15T20:00:00', day: '2022-02-15T00:00:00', homeTeam: 'MIL', homeScore: 128, awayTeam: 'IND', …}
+59
+: 
+{date: '2022-02-17T20:30:00', day: '2022-02-17T00:00:00', homeTeam: 'MIL', homeScore: 120, awayTeam: 'PHI', …}
+60
+: 
+{date: '2022-02-26T20:30:00', day: '2022-02-26T00:00:00', homeTeam: 'MIL', homeScore: 123, awayTeam: 'BKN', …}
+61
+: 
+{date: '2022-02-28T20:00:00', day: '2022-02-28T00:00:00', homeTeam: 'MIL', homeScore: 130, awayTeam: 'CHA', …}
+62
+: 
+{date: '2022-03-02T20:00:00', day: '2022-03-02T00:00:00', homeTeam: 'MIL', homeScore: 120, awayTeam: 'MIA', …}
+63
+: 
+{date: '2022-03-04T19:30:00', day: '2022-03-04T00:00:00', homeTeam: 'CHI', homeScore: 112, awayTeam: 'MIL', …}
+64
+: 
+{date: '2022-03-06T15:30:00', day: '2022-03-06T00:00:00', homeTeam: 'MIL', homeScore: 132, awayTeam: 'PHO', …}
+65
+: 
+{date: '2022-03-08T20:00:00', day: '2022-03-08T00:00:00', homeTeam: 'OKC', homeScore: 115, awayTeam: 'MIL', …}
+66
+: 
+{date: '2022-03-09T20:00:00', day: '2022-03-09T00:00:00', homeTeam: 'MIL', homeScore: 124, awayTeam: 'ATL', …}
+67
+: 
+{date: '2022-03-12T20:30:00', day: '2022-03-12T00:00:00', homeTeam: 'GS', homeScore: 122, awayTeam: 'MIL', …}
+68
+: 
+{date: '2022-03-14T22:00:00', day: '2022-03-14T00:00:00', homeTeam: 'UTA', homeScore: 111, awayTeam: 'MIL', …}
+69
+: 
+{date: '2022-03-16T22:00:00', day: '2022-03-16T00:00:00', homeTeam: 'SAC', homeScore: 126, awayTeam: 'MIL', …}
+70
+: 
+{date: '2022-03-19T17:00:00', day: '2022-03-19T00:00:00', homeTeam: 'MIN', homeScore: 138, awayTeam: 'MIL', …}
+71
+: 
+{date: '2022-03-22T20:00:00', day: '2022-03-22T00:00:00', homeTeam: 'MIL', homeScore: 126, awayTeam: 'CHI', …}
+72
+: 
+{date: '2022-03-24T20:00:00', day: '2022-03-24T00:00:00', homeTeam: 'MIL', homeScore: 114, awayTeam: 'WAS', …}
+73
+: 
+{date: '2022-03-26T20:00:00', day: '2022-03-26T00:00:00', homeTeam: 'MEM', homeScore: 127, awayTeam: 'MIL', …}
+74
+: 
+{date: '2022-03-29T19:00:00', day: '2022-03-29T00:00:00', homeTeam: 'PHI', homeScore: 116, awayTeam: 'MIL', …}
+75
+: 
+{date: '2022-03-31T19:30:00', day: '2022-03-31T00:00:00', homeTeam: 'BKN', homeScore: 119, awayTeam: 'MIL', …}
+76
+: 
+{date: '2022-04-01T20:00:00', day: '2022-04-01T00:00:00', homeTeam: 'MIL', homeScore: 119, awayTeam: 'LAC', …}
+77
+: 
+{date: '2022-04-03T13:00:00', day: '2022-04-03T00:00:00', homeTeam: 'MIL', homeScore: 112, awayTeam: 'DAL', …}
+78
+: 
+{date: '2022-04-05T20:00:00', day: '2022-04-05T00:00:00', homeTeam: 'CHI', homeScore: 106, awayTeam: 'MIL', …}
+79
+: 
+{date: '2022-04-07T19:30:00', day: '2022-04-07T00:00:00', homeTeam: 'MIL', homeScore: 127, awayTeam: 'BOS', …}
+80
+: 
+{date: '2022-04-08T19:00:00', day: '2022-04-08T00:00:00', homeTeam: 'DET', homeScore: 101, awayTeam: 'MIL', …}
+81
+: 
+{date: '2022-04-10T15:30:00', day: '2022-04-10T00:00:00', homeTeam: 'CLE', homeScore: 133, awayTeam: 'MIL', …}
+length
+: 
+82
+message.txt
+10 KB
