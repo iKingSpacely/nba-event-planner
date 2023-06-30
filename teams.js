@@ -1,5 +1,7 @@
 // const { Model } = require("sequelize");
 
+const { get } = require("./controllers");
+
 const Wizards = 1;
 const Hornets = 2;
 const Hawks = 3;
@@ -66,6 +68,7 @@ function getTeamDetails(teamNumber) {
         default: return { fullName: "Unknown team", city: "Unknown city", abbreviation: "UNK"};
     }
 }
+getTeamDetails();
 
 module.exports = {
     Wizards,
