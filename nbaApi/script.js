@@ -19,6 +19,13 @@ fetch(schedulesBasic)
     // Do something with the extracted information
     console.log(games);
     const teamGames = games.filter(game => (game.homeTeam === "MIL" || game.awayTeam === "MIL"))
+    let searchBody = document.createElement('div');
+    let homeTeam = document.createElement('p');
+    let awayTeam = document.createElement('p');
+    let homeScore = document.createElement('p');
+    let awayScore = document.createElement('p');
+    let date = document.createElement('p');
+    let day = document.createElement('p');
     console.log(teamGames);
   })
   .catch(error => {
