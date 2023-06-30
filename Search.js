@@ -1,5 +1,5 @@
 
-
+const schedulesBasic = `https://api.sportsdata.io/v3/nba/scores/json/SchedulesBasic/2022?key=${process.env.API_KEY}}`;
 
 
 
