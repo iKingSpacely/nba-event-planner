@@ -1,38 +1,8 @@
-// const { Model } = require("sequelize");
+const express = require('express');
+const router = express.Router();
+const { fetchTeamGames } = require('../models/Search'); // import search model
 
-const { get } = require("./controllers");
-
-const Wizards = 1;
-const Hornets = 2;
-const Hawks = 3;
-const Heat = 4;
-const Magic = 5;
-const Knicks = 6;
-const Sixers = 7;
-const Nets = 8;
-const Celtics = 9;
-const Raptors = 10;
-const Bulls = 11;
-const Cavaliers = 12;
-const Pacers = 13;
-const Pistons = 14;
-const Bucks = 15;
-const Timberwolves = 16;
-const Jazz = 17;
-const Thunder = 18;
-const TrailBlazers = 19;
-const Nuggets = 20;
-const Grizzlies = 21;
-const Rockets = 22;
-const Pelicans = 23;
-const Spurs = 24;
-const Mavericks = 25;
-const Warriors = 26;
-const Lakers = 27;
-const Clippers = 28;
-const Suns = 29;
-const Kings = 30;
-
+// team routes
 function getTeamDetails(teamNumber) {
     switch (teamNumber) {
         case 1: return { fullName: "Washington Wizards", city: "Washington", abbreviation: "WAS"};
@@ -68,37 +38,26 @@ function getTeamDetails(teamNumber) {
         default: return { fullName: "Unknown team", city: "Unknown city", abbreviation: "UNK"};
     }
 }
-getTeamDetails();
 
-module.exports = {
-    Wizards,
-    Hornets,
-    Hawks,
-    Heat,
-    Magic,
-    Knicks,
-    Sixers,
-    Nets,
-    Celtics,
-    Raptors,
-    Bulls,
-    Cavaliers,
-    Pacers,
-    Pistons,
-    Bucks,
-    Timberwolves,
-    Jazz,
-    Thunder,
-    TrailBlazers,
-    Nuggets,
-    Grizzlies,
-    Rockets,
-    Pelicans,
-    Spurs,
-    Mavericks,
-    Warriors,
-    Lakers,
-    Clippers,
-    Suns,
-    Kings,
-};
+router.get('/api/team/:teamNumber', (req, res) => {  
+    const teamNumber = parseInt(req.params.teamNumber);
+    const teamDetails = getTeamDetails(teamNumber);
+    res.json(teamDetails);
+});
+
+// New endpoint for fetching team games
+router.get('/api/games/:teamNumber', async (req, res) => {
+    const teamNumber = parseInt(req.params.teamNumber);
+    const teamDetails = getTeamDetails(teamNumber);
+
+    try {
+        const games = await fetchTeamGames(teamDetails.abbreviation);
+        res.json(games);
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Error fetching games.');
+    }
+});
+
+
+
