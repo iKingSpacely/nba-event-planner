@@ -1,15 +1,31 @@
-const fetch = require('node-fetch');
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection');
 
-const schedulesBasic = "https://api.sportsdata.io/v3/nba/scores/json/SchedulesBasic/2022?key=49d03c3b1c98473d9319c7319ab5f1dd";
+class Search extends Model { };
 
-async function fetchTeamGames(teamAbbreviation) {
-  const response = await fetch(schedulesBasic);
-  const data = await response.json();
+Search.init({
+    id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        primaryKey: true,
+        autoIncrement: true,
+    },
+    team_name: {
+        type: DataTypes.STRING,
+        allowNull: true,
+    },
+    game_date: {
+        type: DataTypes.DATE,
+        allowNull: true,
+    },
+    user_id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references: {
+            model: 'user',
+            key: 'id',
+        },
+    },
+});
 
-  // Filter games for the specified team
-  const teamGames = data.filter(game => game.HomeTeam === teamAbbreviation || game.AwayTeam === teamAbbreviation);
-
-  return teamGames;
-}
-
-module.exports = { fetchTeamGames };
+module.exports = Search;
