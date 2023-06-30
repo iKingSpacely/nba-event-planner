@@ -123,6 +123,7 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+<<<<<<< HEAD
 # .env
 .env
 .env.local
@@ -130,3 +131,6 @@ dist
 .env.test.local
 .env.production.local
 
+=======
+.env
+>>>>>>> fff2815c07ced634e74871da47f268b8a8adaafe

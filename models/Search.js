@@ -10,12 +10,28 @@ Search.init({
         primaryKey: true,
         autoIncrement: true,
     },
-    team_name: {
+    day: {
+        type: DataTypes.DATE,
+        allowNull: true,
+    },
+    date_time: {
+        type: DataTypes.DATE,
+        allowNull: true,
+    },
+    away_team: {
         type: DataTypes.STRING,
         allowNull: true,
     },
-    game_date: {
-        type: DataTypes.DATE,
+    home_team: {
+        type: DataTypes.STRING,
+        allowNull: true,
+    },
+    away_score: {
+        type: DataTypes.INTEGER,
+        allowNull: true,
+    },
+    home_score: {
+        type: DataTypes.INTEGER,
         allowNull: true,
     },
     user_id: {
@@ -26,6 +42,8 @@ Search.init({
             key: 'id',
         },
     },
+
+    // day,dattime,away, home team, scores for both,
 });
 
 module.exports = Search;
