@@ -40,7 +40,7 @@ router.get('/comment/:id', async (req, res) => {
 
     const comments = commentData.get({ plain: true });
 
-    res.render('project', {
+    res.render('comments', {
       ...comments,
       logged_in: req.session.logged_in
     });
