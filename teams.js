@@ -33,6 +33,8 @@ const Clippers = 28;
 const Suns = 29;
 const Kings = 30;
 
+
+
 function getTeamDetails(teamNumber) {
     switch (teamNumber) {
         case 1: return { fullName: "Washington Wizards", city: "Washington", abbreviation: "WAS"};
