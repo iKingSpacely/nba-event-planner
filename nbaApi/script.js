@@ -1,4 +1,3 @@
-
 const schedulesBasic = "https://api.sportsdata.io/v3/nba/scores/json/SchedulesBasic/2022?key=49d03c3b1c98473d9319c7319ab5f1dd";
 
 
@@ -20,28 +19,17 @@ fetch(schedulesBasic)
     // Do something with the extracted information
     console.log(games);
     const teamGames = games.filter(game => (game.homeTeam === "MIL" || game.awayTeam === "MIL"))
+    let searchBody = document.createElement('div');
+    let homeTeam = document.createElement('p');
+    let awayTeam = document.createElement('p');
+    let homeScore = document.createElement('p');
+    let awayScore = document.createElement('p');
+    let date = document.createElement('p');
+    let day = document.createElement('p');
     console.log(teamGames);
   })
   .catch(error => {
     console.log('Error:', error);
   });
 
-
-var nbaAPI = "https://api.sportsdata.io/v3/nba/scores/json/GamesByDate/2023-06-01?key=49d03c3b1c98473d9319c7319ab5f1dd";
-
-
-function gatherAPI() {
-    // event.preventDefault();
-    console.log(nbaAPI);
-    fetch(nbaAPI)
-        .then(function (response) {
-            console.log(response.json());
-            // return response.json();
-            return;
-            
-        }); 
-   
-}
-
-gatherAPI();
 

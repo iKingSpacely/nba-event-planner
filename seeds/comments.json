@@ -1,0 +1,9 @@
+[
+    {
+        "name": "bob",
+        "description": "test comment",
+        "date_created":"06/29/23",
+        "user_id": 1  
+    }
+]
+// use insomnia, can create this to see on the homepage
