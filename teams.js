@@ -1,3 +1,5 @@
+// const { Model } = require("sequelize");
+
 const Wizards = 1;
 const Hornets = 2;
 const Hawks = 3;
@@ -28,42 +30,6 @@ const Lakers = 27;
 const Clippers = 28;
 const Suns = 29;
 const Kings = 30;
-
-// function getTeamName(teamNumber) {
-//     switch (teamNumber) {
-//         case 1: return "Wizards";
-//         case 2: return "Hornets";
-//         case 3: return "Hawks";
-//         case 4: return "Heat";
-//         case 5: return "Magic";
-//         case 6: return "Knicks";
-//         case 7: return "Sixers";
-//         case 8: return "Nets";
-//         case 9: return "Celtics";
-//         case 10: return "Raptors";
-//         case 11: return "Bulls";
-//         case 12: return "Cavaliers";
-//         case 13: return "Pacers";
-//         case 14: return "Pistons";
-//         case 15: return "Bucks";
-//         case 16: return "Timberwolves";
-//         case 17: return "Jazz";
-//         case 18: return "Thunder";
-//         case 19: return "TrailBlazers";
-//         case 20: return "Nuggets";
-//         case 21: return "Grizzlies";
-//         case 22: return "Rockets";
-//         case 23: return "Pelicans";
-//         case 24: return "Spurs";
-//         case 25: return "Mavericks";
-//         case 26: return "Warriors";
-//         case 27: return "Lakers";
-//         case 28: return "Clippers";
-//         case 29: return "Suns";
-//         case 30: return "Kings";
-//         default: return "Unknown team";
-//     }
-// }
 
 function getTeamDetails(teamNumber) {
     switch (teamNumber) {
@@ -100,3 +66,36 @@ function getTeamDetails(teamNumber) {
         default: return { fullName: "Unknown team", city: "Unknown city", abbreviation: "UNK"};
     }
 }
+
+module.exports = {
+    Wizards,
+    Hornets,
+    Hawks,
+    Heat,
+    Magic,
+    Knicks,
+    Sixers,
+    Nets,
+    Celtics,
+    Raptors,
+    Bulls,
+    Cavaliers,
+    Pacers,
+    Pistons,
+    Bucks,
+    Timberwolves,
+    Jazz,
+    Thunder,
+    TrailBlazers,
+    Nuggets,
+    Grizzlies,
+    Rockets,
+    Pelicans,
+    Spurs,
+    Mavericks,
+    Warriors,
+    Lakers,
+    Clippers,
+    Suns,
+    Kings,
+};
