@@ -1,14 +1,18 @@
-<form class="login-form">
+<form class="signup-form">
   <!-- Email input -->
   <div class="form-outline mb-4">
-    <input type="email" id="email-login" class="form-control" />
-    <label class="form-label" for="email-login">Email address</label>
+    <input type="email" id="email-signup" class="form-control" />
+    <label class="form-label" for="email-signup">Email address</label>
+  </div>
+  <div class="form-outline mb-4">
+    <input type="text" id="name-signup" class="form-control" />
+    <label class="form-label" for="name-signup">Username</label>
   </div>
 
   <!-- Password input -->
   <div class="form-outline mb-4">
-    <input type="password" id="password-login" class="form-control" />
-    <label class="form-label" for="password-login">Password</label>
+    <input type="password" id="password-signup" class="form-control" />
+    <label class="form-label" for="password-signup">Password</label>
   </div>
 
   <!-- 2 column grid layout for inline styling -->
@@ -28,12 +32,9 @@
   </div>
 
   <!-- Submit button -->
-  <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+  <button type="submit" class="btn btn-primary btn-block mb-4">Sign Up</button>
 
-  <!-- Register buttons -->
-  <div class="text-center">
-    <p>Not a member? <a href="#!">Register</a></p>
-  </div>
+  
 </form>
 
-<script src="./js/login.js"></script>
+<script src="./js/signup.js"></script>
