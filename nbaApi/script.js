@@ -26,10 +26,12 @@ fetch(schedulesBasic)
     let awayScore = document.createElement('p');
     let date = document.createElement('p');
     let day = document.createElement('p');
+    searchBody.appendChild(awayTeam, homeTeam, homeScore, awayScore, date, day);
+    searchBody.setAttribute('class', 'pb-5');
     console.log(teamGames);
   })
   .catch(error => {
     console.log('Error:', error);
   });
 
-
+module.exports = schedulesBasic;
