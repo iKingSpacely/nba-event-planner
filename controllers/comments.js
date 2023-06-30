@@ -1,82 +1,82 @@
-// const router = require('express').Router();
-// const { Comments, User } = require('../models');
-// const withAuth = require('../utils/auth');
+const router = require('express').Router();
+const { Comments, User } = require('../models');
+const withAuth = require('../utils/auth');
 
-// router.get('/', async (req, res) => {
-//   try {
-//     // Get all projects and JOIN with user data
-//     const commentData = await Comments.findAll({
-//       include: [
-//         {
-//           model: User,
-//           attributes: ['name'],
-//         },
-//       ],
-//     });
+router.get('/', async (req, res) => {
+  try {
+    // Get all projects and JOIN with user data
+    const commentData = await Comments.findAll({
+      include: [
+        {
+          model: User,
+          attributes: ['name'],
+        },
+      ],
+    });
 
-//     // Serialize data so the template can read it
-//     const comments = commentData.map((comment) => comment.get({ plain: true }));
+    // Serialize data so the template can read it
+    const comments = commentData.map((comment) => comment.get({ plain: true }));
 
-//     // Pass serialized data and session flag into template
-//     res.render('homepage', { 
-//       comments, 
-//       logged_in: req.session.logged_in 
-//     });
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
+    // Pass serialized data and session flag into template
+    res.render('homepage', { 
+      comments, 
+      logged_in: req.session.logged_in 
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
-// router.get('/comment/:id', async (req, res) => {
-//   try {
-//     const commentData = await Comments.findByPk(req.params.id, {
-//       include: [
-//         {
-//           model: User,
-//           attributes: ['name'],
-//         },
-//       ],
-//     });
+router.get('/comment/:id', async (req, res) => {
+  try {
+    const commentData = await Comments.findByPk(req.params.id, {
+      include: [
+        {
+          model: User,
+          attributes: ['name'],
+        },
+      ],
+    });
 
-//     const comments = commentData.get({ plain: true });
+    const comments = commentData.get({ plain: true });
 
-//     res.render('project', {
-//       ...comments,
-//       logged_in: req.session.logged_in
-//     });
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
+    res.render('project', {
+      ...comments,
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
-// // Use withAuth middleware to prevent access to route
-// router.get('/profile', withAuth, async (req, res) => {
-//   try {
-//     // Find the logged in user based on the session ID
-//     const userData = await User.findByPk(req.session.user_id, {
-//       attributes: { exclude: ['password'] },
-//       include: [{ model: Project }],
-//     });
+// Use withAuth middleware to prevent access to route
+router.get('/profile', withAuth, async (req, res) => {
+  try {
+    // Find the logged in user based on the session ID
+    const userData = await User.findByPk(req.session.user_id, {
+      attributes: { exclude: ['password'] },
+      include: [{ model: Project }],
+    });
 
-//     const user = userData.get({ plain: true });
+    const user = userData.get({ plain: true });
 
-//     res.render('homepage', { //chnaged from profile
-//       ...user,
-//       logged_in: true
-//     });
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
+    res.render('homepage', { //chnaged from profile
+      ...user,
+      logged_in: true
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
-// router.get('/login', (req, res) => {
-//   // If the user is already logged in, redirect the request to another route
-//   if (req.session.logged_in) {
-//     res.redirect('/homepage'); //changed from profile
-//     return;
-//   }
+router.get('/login', (req, res) => {
+  // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.redirect('/homepage'); //changed from profile
+    return;
+  }
 
-//   res.render('login');
-// });
+  res.render('login');
+});
 
-// module.exports = router;
+module.exports = router;
