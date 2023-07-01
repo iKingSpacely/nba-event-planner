@@ -1,50 +1,8 @@
 <div>
 
-{{!-- eastern conference --}}
-<select id="team-select1">
-  <option value="east">Eastern Conference</option>
-  <option value="eastteam1">Wizards</option>
-  <option value="eastteam2">Hornets</option>
-  <option value="eastteam3">Hawks</option>
-  <option value="eastteam4">Heat</option>
-  <option value="eastteam5">Magic</option>
-  <option value="eastteam6">Knicks</option>
-  <option value="eastteam7">Sixers</option>
-  <option value="eastteam8">Nets</option>
-  <option value="eastteam9">Celtics</option>
-  <option value="eastteam10">Raptors</option>
-  <option value="eastteam11">Bulls</option>
-  <option value="eastteam12">Cavaliers</option>
-  <option value="eastteam13">Pacers</option>
-  <option value="eastteam14">Pistons</option>
-  <option value="eastteam15">Bucks</option>
-  <button id="submit-btn1">Submit</button>
-</select>
-<button id="submit-btn1">Submit</button>
-
-{{!-- western western conference --}}
-<select id="team-select2">
-  <option value="west">Western Conference</option>
-  <option value="westteam1">Timberwolves</option>
-  <option value="westteam2">Jazz</option>
-  <option value="westteam3">Thunder</option>
-  <option value="westteam4">Trailblazers</option>
-  <option value="westteam5">Nuggets</option>
-  <option value="westteam6">Grizzlies</option>
-  <option value="westteam7">Rockets</option>
-  <option value="westteam8">Pelicans</option>
-  <option value="westteam9">Spurs</option>
-  <option value="westteam10">Mavericks</option>
-  <option value="westteam11">Warriors</option>
-  <option value="westteam12">Lakers</option>
-  <option value="westteam13">Clippers</option>
-  <option value="westteam14">Suns</option>
-  <option value="westteam15">Kings</option>
-</select>
-<button id="submit-btn1">Submit</button>
-
-<div id="sports-data">
-  {{#each teamGames}}
-  <h1>{{this.Day}}</h1>
-  {{/each}}
+sports data
+{{#each teamGames}}
+<h1>{{this.Day}}</h1>
+{{/each}}
+    
 </div>
