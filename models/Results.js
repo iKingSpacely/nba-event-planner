@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Search extends Model { };
+class Results extends Model { };
 
-Search.init({
+Results.init({
     id: {
         type: DataTypes.INTEGER,
         allowNull: false,
@@ -41,9 +41,15 @@ Search.init({
             model: 'user',
             key: 'id',
         },
-    },
+    }
+},
+{
+    sequelize,
+    timestamps: false,
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'results',
+  }
+);
 
-    // day,dattime,away, home team, scores for both,
-});
-
-module.exports = Search;
+module.exports = Results;
