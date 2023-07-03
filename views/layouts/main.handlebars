@@ -16,15 +16,26 @@
     <header class="display-flex justify-space-between align-center p-2">
       <h1>
         {{!-- <span role="img" aria-label="money">💸</span> --}}
-        <a href="/">Hello World</a>
+        {{!-- <a href="/">Hello World</a> --}}
       </h1>
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/">profile</a> |
-        <button class="no-button" id="logout">logout</button>
+        {{!-- <a href="/">profile</a> | --}}
+        {{!-- <button class="no-button" id="logout">logout</button> --}}
+         <nav class="navbar navbar-light bg-light static-top">
+            <div class="container">
+                <a class="navbar-brand" href="#!">Game Time Planner</a>
+                <a class="btn btn-primary" href="/" id="logout" >Logout</a>
+            </div>
+        </nav>
         {{else}}
-        <a href="/login">login</a>
+        {{!-- <a href="/login">login</a> --}}
+        <nav class="navbar navbar-light bg-light static-top">
+            <div class="container">
+                <a class="navbar-brand" href="#!">Game Time Planner</a>
+                <a class="btn btn-primary" href="/login">Login</a>
+            </div>
         {{/if}}
       </nav>
     </header>
