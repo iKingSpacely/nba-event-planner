@@ -98,4 +98,13 @@ router.get('/signup', (req, res) => {
 //        res.render('teamsearch', { results })
 // });
 
+//created with tutor on 7/3
+// router.get('/sportsteams', withAuth, async (req, res) => {
+//   const sportTeamData = await Results.findAll().catch((err) => {
+//       res.json(err)
+//   })
+//        const results = sportTeamData.map((result) => result.get({ plain:true}))
+//        res.render('teamsearch', { results })
+// });
+
 module.exports = router;

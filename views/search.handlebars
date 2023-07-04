@@ -46,7 +46,7 @@
 
 {{!-- search functionality --}}
 <script>
-    document.getElementById('eastern').addEventListener('click', function() {
+    document.getElementById('eastern').addEventListener('click', function () {
         var team = document.getElementById('team-select1').value.slice(8); // remove 'eastteam'
         fetch('/sportsdata/' + team)
             .then(response => response.json())
@@ -66,7 +66,7 @@
             });
     });
 
-    document.getElementById('western').addEventListener('click', function() {
+    document.getElementById('western').addEventListener('click', function () {
         var team = document.getElementById('team-select2').value.slice(8); // remove 'westteam'
         fetch('/sportsdata/' + team)
             .then(response => response.json())

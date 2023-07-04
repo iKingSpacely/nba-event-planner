@@ -18,6 +18,27 @@
 //       return { date, day, homeTeam, homeScore, awayTeam, awayScore };
 //     });
 
+
+    // Do something with the extracted information
+    console.log(games);
+    const teamGames = games.filter(game => (game.homeTeam === "MIL" || game.awayTeam === "MIL"))
+    let searchBody = document.createElement('div');
+    let homeTeam = document.createElement('p');
+    let awayTeam = document.createElement('p');
+    let homeScore = document.createElement('p');
+    let awayScore = document.createElement('p');
+    let date = document.createElement('p');
+    let day = document.createElement('p');
+    searchBody.appendChild(awayTeam, homeTeam, homeScore, awayScore, date, day);
+    searchBody.setAttribute('class', 'pb-5');
+    console.log(teamGames);
+  })
+  .catch(error => {
+    console.log('Error:', error);
+  });
+
+module.exports = schedulesBasic;
+
 //     // Do something with the extracted information
 //     console.log(games);
 //     const teamGames = games.filter(game => (game.homeTeam === "MIL" || game.awayTeam === "MIL"))
