@@ -34,8 +34,37 @@ router.get('/sportsdata/:teamAbbr', async(req,res)=>{
   const teamGames = data.filter(game => game.HomeTeam === teamName || game.AwayTeam === teamName);
   console.log(teamGames);
 res.render('result',{teamGames})
+
   // return teamGames;
 })
+//created with tutor on 7/3
+// router.get('/', withAuth, async (req, res) => {
+//   const sportTeamData = await Results.findAll().catch((err) => {
+//       res.json(err)
+//   })
+//        const results = sportTeamData.map((result) => result.get({ plain:true}))
+//        res.render('teamsearch', { results })
+// });
+
+// router.get('/', async(req,res)=>{
+//   // const response = await fetch(schedulesBasic);
+//   // const data = await response.json();
+//   // let teamName = req.params.teamAbbr.toUpperCase()
+//   const sportTeamData = await Results.findAll().catch((e) => {
+//     res.json(e);
+//   }) 
+//   const results = sportTeamData.map((result) => result.get({ plain: true}))
+//   res.render('teamsearch', {results}) 
+
+
+//   // // Filter games for the specified team
+//   // const teamGames = data.filter(game => game.HomeTeam === teamName || game.AwayTeam === teamName);
+//   // console.log(teamGames);
+// // res.render('result',{teamGames})
+// // res.render('teamsearch',{teamGames})
+
+//   // return teamGames;
+// });
 
 
 
