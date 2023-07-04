@@ -2,36 +2,43 @@
 
 const { get } = require("./controllers");
 
-const Wizards = 1;
-const Hornets = 2;
-const Hawks = 3;
-const Heat = 4;
-const Magic = 5;
-const Knicks = 6;
-const Sixers = 7;
-const Nets = 8;
-const Celtics = 9;
-const Raptors = 10;
-const Bulls = 11;
-const Cavaliers = 12;
-const Pacers = 13;
-const Pistons = 14;
-const Bucks = 15;
-const Timberwolves = 16;
-const Jazz = 17;
-const Thunder = 18;
-const TrailBlazers = 19;
-const Nuggets = 20;
-const Grizzlies = 21;
-const Rockets = 22;
-const Pelicans = 23;
-const Spurs = 24;
-const Mavericks = 25;
-const Warriors = 26;
-const Lakers = 27;
-const Clippers = 28;
-const Suns = 29;
-const Kings = 30;
+const easternConference = {
+    Wizards: 1,
+    Hornets: 2,
+    Hawks: 3,
+    Heat: 4,
+    Magic: 5,
+    Knicks: 6,
+    Sixers: 7,
+    Nets: 8,
+    Celtics: 9,
+    Raptors: 10,
+    Bulls: 11,
+    Cavaliers: 12,
+    Pacers: 13,
+    Pistons: 14,
+    Bucks: 15
+};
+  
+const westernConference = {
+    Timberwolves: 16,
+    Jazz: 17,
+    Thunder: 18,
+    TrailBlazers: 19,
+    Nuggets: 20,
+    Grizzlies: 21,
+    Rockets: 22,
+    Pelicans: 23,
+    Spurs: 24,
+    Mavericks: 25,
+    Warriors: 26,
+    Lakers: 27,
+    Clippers: 28,
+    Suns: 29,
+    Kings: 30
+};
+
+
 
 function getTeamDetails(teamNumber) {
     switch (teamNumber) {
