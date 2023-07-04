@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Search } = require('../../models');
+const { Results } = require('../../models');
 const withAuth = require('../../utils/auth');
 const fetch = require('node-fetch');
 require('dotenv').config();
@@ -10,16 +10,16 @@ const schedulesBasic = `https://api.sportsdata.io/v3/nba/scores/json/SchedulesBa
 
 
 
-
+// /api/result/savefav
 router.post('/savefav', withAuth, async (req, res) => {
+  console.log(req.body, req.session.user_id);
   try {
-    const newSearch = await Search.create({
+    const newResults = await Results.create({
       ...req.body,
       user_id: req.session.user_id,
-      team_name: req.team_name,
     });
 
-    res.status(200).json(newSearch);
+    res.status(200).json(newResults);
   } catch (err) {
     res.status(400).json(err);
   }
@@ -32,20 +32,13 @@ router.get('/sportsdata/:teamAbbr', async(req,res)=>{
 
   // Filter games for the specified team
   const teamGames = data.filter(game => game.HomeTeam === teamName || game.AwayTeam === teamName);
-  // console.log(teamGames);
+  console.log(teamGames);
 res.render('result',{teamGames})
   // return teamGames;
 })
 
 
-//created with tutor on 7/3
-// router.get('/', withAuth, async (req, res) => {
-//   const sportTeamData = await Results.findAll().catch((err) => {
-//       res.json(err)
-//   })
-//        const results = sportTeamData.map((result) => result.get({ plain:true}))
-//        res.render('teamsearch', { results })
-// });
+
 
 // router.delete('/:id', withAuth, async (req, res) => {
 //   try {
