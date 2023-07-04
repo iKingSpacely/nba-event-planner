@@ -1,0 +1,148 @@
+<div>
+    <input type="text" id="myInput" onkeyup="teamSearch()" placeholder="Search for names..">
+
+    <ul id="myUL" class="">
+{{#each results as |result|}}
+        <li id= "test" class="name">
+            <a class="name-size">{{result.away_team}}</a>
+        </li>
+        {{!-- <div class="info">
+        <p class="address">
+            <a></a>
+        </p>
+        <p class="city">
+            <a></a>
+        </p>
+        <p class="phone">
+            <a></a>
+        </p>
+        <p class="hours">
+            <a></a>
+        </p> --}}
+        </div>
+        {{/each}}
+    </ul>
+    {{!-- eastern conference --}}
+    <select id="team-select1">
+        <option value="east">Eastern Conference</option>
+        <option value="eastteam1">Wizards</option>
+        <option value="eastteam2">Hornets</option>
+        <option value="eastteam3">Hawks</option>
+        <option value="eastteam4">Heat</option>
+        <option value="eastteam5">Magic</option>
+        <option value="eastteam6">Knicks</option>
+        <option value="eastteam7">Sixers</option>
+        <option value="eastteam8">Nets</option>
+        <option value="eastteam9">Celtics</option>
+        <option value="eastteam10">Raptors</option>
+        <option value="eastteam11">Bulls</option>
+        <option value="eastteam12">Cavaliers</option>
+        <option value="eastteam13">Pacers</option>
+        <option value="eastteam14">Pistons</option>
+        <option value="eastteam15">Bucks</option>
+    </select>
+    <button id="eastern">Submit</button>
+</div>
+<div>
+    {{!-- western western conference --}}
+    <select id="team-select2">
+        <option value="west">Western Conference</option>
+        <option value="westteam1">Timberwolves</option>
+        <option value="westteam2">Jazz</option>
+        <option value="westteam3">Thunder</option>
+        <option value="westteam4">Trailblazers</option>
+        <option value="westteam5">Nuggets</option>
+        <option value="westteam6">Grizzlies</option>
+        <option value="westteam7">Rockets</option>
+        <option value="westteam8">Pelicans</option>
+        <option value="westteam9">Spurs</option>
+        <option value="westteam10">Mavericks</option>
+        <option value="westteam11">Warriors</option>
+        <option value="westteam12">Lakers</option>
+        <option value="westteam13">Clippers</option>
+        <option value="westteam14">Suns</option>
+        <option value="westteam15">Kings</option>
+    </select>
+    <button id="western">Submit</button>
+</div>
+
+
+
+<ul id="myUL">
+  <li><a href="#">Adele</a></li>
+  <li><a href="#">Agnes</a></li>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+</ul>
+
+
+{{!-- search functionality --}}
+<script>
+    document.getElementById('eastern').addEventListener('click', function() {
+        var team = document.getElementById('team-select1').value.slice(8); // remove 'eastteam'
+        fetch('/sportsdata/' + team)
+            .then(response => response.json())
+            .then(data => {
+                // Clear out the old data
+                var sportsDataDiv = document.getElementById('sports-data');
+                while (sportsDataDiv.firstChild) {
+                    sportsDataDiv.removeChild(sportsDataDiv.firstChild);
+                }
+
+                // Add the new data
+                data.forEach(game => {
+                    var h1 = document.createElement('h1');
+                    h1.textContent = game.Day;
+                    sportsDataDiv.appendChild(h1);
+                });
+            });
+    });
+
+    document.getElementById('western').addEventListener('click', function() {
+        var team = document.getElementById('team-select2').value.slice(8); // remove 'westteam'
+        fetch('/sportsdata/' + team)
+            .then(response => response.json())
+            .then(data => {
+                // Clear out the old data
+                var sportsDataDiv = document.getElementById('sports-data');
+                while (sportsDataDiv.firstChild) {
+                    sportsDataDiv.removeChild(sportsDataDiv.firstChild);
+                }
+
+                // Add the new data
+                data.forEach(game => {
+                    var h1 = document.createElement('h1');
+                    h1.textContent = game.Day;
+                    sportsDataDiv.appendChild(h1);
+                });
+            });
+    });
+
+//search formula     
+function teamSearch() {
+    // Declare variables
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+  
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+</script>
+{{!--
+<script src="./js/search.js"></script> --}}
