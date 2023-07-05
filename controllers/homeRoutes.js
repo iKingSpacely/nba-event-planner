@@ -89,6 +89,32 @@ router.get('/signup', (req, res) => {
 
   res.render('signup');
 });
+
+router.get('/', async (req, res) => {
+  try {
+    // Get all projects and JOIN with user data
+    const commentData = await Comments.findAll({
+      include: [
+        {
+          model: User,
+          attributes: ['name'],
+        },
+      ],
+    });
+
+    // Serialize data so the template can read it
+    const comments = commentData.map((comment) => comment.get({ plain: true }));
+
+    // Pass serialized data and session flag into template
+    res.render('homepage', { 
+      comments, 
+      logged_in: req.session.logged_in 
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 //created with tutor on 7/3
 // router.get('/sportsteams', withAuth, async (req, res) => {
 //   const sportTeamData = await Results.findAll().catch((err) => {
