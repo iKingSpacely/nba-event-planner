@@ -16,29 +16,29 @@ sports data
 
 </div> --}}
 
-</div>
 
 
- {{#each teamGames}}
-  <div class="accordion accordion-flush" id="resultsPopulate"></div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#${day}-${index}" aria-expanded="false" aria-controls="${day}-${index}">
-                  {{HomeTeam}} vs {{AwayTeam}}
-                </button>
-              </h2>
-              <div id="${day}-${index}" class="accordion-collapse collapse" data-bs-parent="#${parentID}">
-                <div class="accordion-body">
-                  Home Team:{{HomeTeam}}<br>
-                  Home Score: {{HomeScore}}<br>
-                  Away Team: {{AwayTeam}}<br>
-                  Away Score:{{AwayScore}}<br>
-                </div>
-              </div>
-            </div>;
-            </div>
 
-  {{/each}}
+{{#each teamGames}}
+  <div class="accordion accordion-flush" id="resultsPopulate">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{GlobalGameID}}" aria-expanded="false" aria-controls="{{GlobalGameID}}">
+          {{HomeTeam}} vs {{AwayTeam}}
+        </button>
+      </h2>
+      <div id="{{GlobalGameID}}" class="accordion-collapse collapse" data-bs-parent="#resultsPopulate">
+        <div class="accordion-body">
+          Home Team: {{HomeTeam}}<br>
+          Home Score: {{HomeScore}}<br>
+          Away Team: {{AwayTeam}}<br>
+          Away Score: {{AwayScore}}<br>
+        </div>
+      </div>
+    </div>
+  </div>
+{{/each}}
+
 
 {{!-- <script src="/js/result.js"></script> --}}
 
