@@ -1,48 +1,51 @@
-<div>
-    {{!-- eastern conference --}}
-    <select id="team-select1">
-        <option value="east">Eastern Conference</option>
-        <option value="eastteam1">Wizards</option>
-        <option value="eastteam2">Hornets</option>
-        <option value="eastteam3">Hawks</option>
-        <option value="eastteam4">Heat</option>
-        <option value="eastteam5">Magic</option>
-        <option value="eastteam6">Knicks</option>
-        <option value="eastteam7">Sixers</option>
-        <option value="eastteam8">Nets</option>
-        <option value="eastteam9">Celtics</option>
-        <option value="eastteam10">Raptors</option>
-        <option value="eastteam11">Bulls</option>
-        <option value="eastteam12">Cavaliers</option>
-        <option value="eastteam13">Pacers</option>
-        <option value="eastteam14">Pistons</option>
-        <option value="eastteam15">Bucks</option>
-    </select>
-    <button id="eastern">Submit</button>
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Eastern Conference
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="team-select1">
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/WAS" value="eastteam1">Wizards</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/CHA" value="eastteam2">Hornets</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/ATL" value="eastteam3">Hawks</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/MIA" value="eastteam4">Heat</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/ORL" value="eastteam5">Magic</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/NYK" value="eastteam6">Knicks</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/PHI" value="eastteam7">Sixers</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/BKN" value="eastteam8">Nets</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/BOS" value="eastteam9">Celtics</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/TOR" value="eastteam10">Raptors</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/CHI" value="eastteam11">Bulls</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/CLE" value="eastteam12">Cavaliers</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/IND" value="eastteam13">Pacers</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/DET" value="eastteam14">Pistons</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/MIL" value="eastteam15">Bucks</a></li>
+    </ul>
+    {{!-- <button id="eastern" class="btn btn-primary">Submit</button> --}}
+{{!-- </div>
+<div class="dropdown"> --}}
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+        Western Conference
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2" id="team-select2">
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/MIN" value="westteam1">Timberwolves</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/UTA" value="westteam2">Jazz</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/OKC" value="westteam3">Thunder</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/POR" value="westteam4">Trailblazers</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/DEN" value="westteam5">Nuggets</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/MEM" value="westteam6">Grizzlies</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/HOU" value="westteam7">Rockets</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/NOP" value="westteam8">Pelicans</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/SAS" value="westteam9">Spurs</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/DAL" value="westteam10">Mavericks</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/GSW" value="westteam11">Warriors</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/LAL" value="westteam12">Lakers</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/LAC" value="westteam13">Clippers</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/PHX" value="westteam14">Suns</a></li>
+        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/SAC" value="westteam15">Kings</a></li>
+    </ul>
+    {{!-- <button id="western" class="btn btn-primary">Submit</button> --}}
 </div>
-<div>
-    {{!-- western western conference --}}
-    <select id="team-select2">
-        <option value="west">Western Conference</option>
-        <option value="westteam1">Timberwolves</option>
-        <option value="westteam2">Jazz</option>
-        <option value="westteam3">Thunder</option>
-        <option value="westteam4">Trailblazers</option>
-        <option value="westteam5">Nuggets</option>
-        <option value="westteam6">Grizzlies</option>
-        <option value="westteam7">Rockets</option>
-        <option value="westteam8">Pelicans</option>
-        <option value="westteam9">Spurs</option>
-        <option value="westteam10">Mavericks</option>
-        <option value="westteam11">Warriors</option>
-        <option value="westteam12">Lakers</option>
-        <option value="westteam13">Clippers</option>
-        <option value="westteam14">Suns</option>
-        <option value="westteam15">Kings</option>
-    </select>
-    <button id="western">Submit</button>
-    <script src="/public/js/search.js"></script>
-</div>
+<script src="/js/search.js"></script>
+
 
 
 {{#each comments as |comment| }}
@@ -58,6 +61,11 @@
     </h2>
 </div>
 {{/each}}
+
+<script src="./public/js/search.js"></script>
+{{!-- <script src="./js/login.js"></script> --}}
+{{!-- <script src="./js/signup.js"></script> --}}
+{{!-- <script src=
 {{!--
 
 <body>
