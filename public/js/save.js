@@ -1,52 +1,36 @@
 console.log('Script running');
 
 // Target the save button elements using a common class
-let saveButtons = document.querySelectorAll('.saveButton');
+let saveButtons = document.querySelector('.save-btn');
+console.log(saveButtons);
 
-console.log('Found buttons:', saveButtons.length);
+saveButtons.addEventListener('click', async (event) => {
+    console.log(event.target.dataset);
+    let el = event.target.dataset
+    const favData = {
+        home_team: el.homeTeam,
+         home_score: el.homeScore,
+         away_team:el.awayTeam,
+         away_score: el.awayScore,
+         date_time: el.dateTime,
+         day: el.day}
+         console.log(favData);
 
-// Add a click event listener to each save button
-saveButtons.forEach((button, index) => {
-    console.log(`Adding event listener to button ${index}`);
     
-    button.addEventListener('click', async (event) => {
-        console.log(`Button ${index} clicked`);
-        
-        // Prevent the default action
-        event.preventDefault();
 
-        // Gather the data from the data attributes on the button
-        let gameData = {
-            HomeTeam: button.dataset.homeTeam,
-            HomeTeamScore: button.dataset.homeScore,
-            AwayTeam: button.dataset.awayTeam,
-            AwayTeamScore: button.dataset.awayScore,
-            DateTime: button.dataset.dateTime,
-        };
+          
+                const response = await fetch('/api/result/savefav', {
+                  method: 'POST',
+                  body: JSON.stringify(favData),
+                  headers: { 'Content-Type': 'application/json' },
+                });
+            
+                if (response.ok) {
+                  document.location.replace('/profile');
+                } else {
+                  alert('Failed to sign up');
+                }
+            
+})
 
-        console.log(`Button ${index} data:`, gameData);
 
-        try {
-            // Make a POST request to the server
-            let response = await fetch('/savefav', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(gameData),
-            });
-
-            console.log(`Response from button ${index}:`, response);
-
-            // Parse the JSON response from the server
-            let newResults = await response.json();
-
-            console.log(`Data from button ${index}:`, newResults);
-
-            // You could do something with newResults here, like update the UI
-
-        } catch (err) {
-            console.error('Error:', err);
-        }
-    });
-});
