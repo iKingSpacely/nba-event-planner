@@ -1,0 +1,31 @@
+{{#each savedEvents}}
+<div class="accordion accordion-flush" id="savedGames">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#{{GlobalGameID}}" aria-expanded="false" aria-controls="{{GlobalGameID}}">
+                {{HomeTeam}} vs {{AwayTeam}}
+            </button>
+        </h2>
+        <div id="{{GlobalGameID}}" class="accordion-collapse collapse" data-bs-parent="#resultsPopulate">
+            <div class="accordion-body">
+                Home Team: {{HomeTeam}}<br>
+                Home Score: {{HomeTeamScore}}<br>
+                Away Team: {{AwayTeam}}<br>
+                Away Score: {{AwayTeamScore}}<br>
+                Date: {{format_date DateTime}}<br>
+                <a 
+                class="btn btn-primary" 
+                id="saveButton" 
+                data-home-team="{{HomeTeam}}" 
+                data-home-score="{{HomeTeamScore}}"
+                data-away-team="{{AwayTeam}}"
+                data-away-score="{{AwayTeamScore}}"
+                data-date-time="{{DateTime}}"
+                role="button">Save</a>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}
+
