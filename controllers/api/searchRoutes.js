@@ -32,9 +32,9 @@ router.get('/sportsdata/:teamAbbr', async(req,res)=>{
 
   // Filter games for the specified team
   const teamGames = data.filter(game => game.HomeTeam === teamName || game.AwayTeam === teamName);
-  // console.log(teamGames);
-res.render('result',{teamGames})
-  // return teamGames;
+  console.log(teamGames);
+// res.render('result',{teamGames})
+//   return teamGames;
 })
 
 
