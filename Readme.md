@@ -24,7 +24,7 @@ Rob Stowe, Drew Jordan, Suraj Nair, and Adam Colin
 ## Usage
 Insomnia or run the server and test on your browser (preferably Chrome)
 
-login: username - dumb@dumb.com / password - dummy123
+dummy account login: username - dumb@dumb.com / password - dummy123
 
 ## Tests
 Heroku: https://shrouded-castle-00400-b96c02e022d7.herokuapp.com/
