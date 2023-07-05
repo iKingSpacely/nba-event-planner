@@ -34,7 +34,17 @@ sports data
           Away Team: {{AwayTeam}}<br>
           Away Score: {{AwayTeamScore}}<br>
           Date: {{format_date DateTime}}<br>
-          <a class="btn btn-primary" href="#" role="button">Save</a>
+           <a 
+                class="btn btn-primary save-btn" 
+              
+                data-home-team="{{HomeTeam}}" 
+                data-home-score="{{HomeTeamScore}}"
+                data-away-team="{{AwayTeam}}"
+                data-away-score="{{AwayTeamScore}}"
+                data-date-time="{{DateTime}}"
+                data-day="{{Day}}"
+                role="button">Save</a>
+          
         </div>
       </div>
     </div>
@@ -42,5 +52,6 @@ sports data
 {{/each}}
 
 
-<script src="/js/result.js"></script>
+{{!-- <script src="/js/result.js"></script> --}}
 
+<script src="/js/save.js"></script>
