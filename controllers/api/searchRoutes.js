@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Search } = require('../../models');
+const { Results } = require('../../models');
 const withAuth = require('../../utils/auth');
 const fetch = require('node-fetch');
 require('dotenv').config();
@@ -13,14 +13,15 @@ const schedulesBasic = `https://api.sportsdata.io/v3/nba/scores/json/SchedulesBa
 
 router.post('/savefav', withAuth, async (req, res) => {
   try {
-    const newSearch = await Search.create({
+    const newSearch = await Results.create({
       ...req.body,
       user_id: req.session.user_id,
-      team_name: req.team_name,
+      
     });
 
     res.status(200).json(newSearch);
   } catch (err) {
+    console.log(err);
     res.status(400).json(err);
   }
 });
