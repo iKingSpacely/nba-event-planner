@@ -58,7 +58,7 @@
     </h2>
 </div>
 {{/each}}
-{{!--
+
 
 <body>
     <!-- Navigation-->
@@ -83,7 +83,7 @@
                             <!-- Email address input-->
                             <div class="row">
                                 <div class="col">
-                                    <input class="form-control form-control-lg" id="emailAddress" type="email"
+                                    <input class="form-control form-control-lg" id="emailAddress" type="string"
                                         placeholder="Email Address" data-sb-validations="required,email" />
                                     <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:required">
                                         Email Address is required.</div>
@@ -119,7 +119,14 @@
         </div>
     </header>
     <!-- Icons Grid-->
-
+    {{!-- <div class="row mb-4 project">
+    <div class="col-md-5">
+        <p> {{description}} </p>
+        <h2>
+            Created by {{user.name}} on {{format_date date_created}}
+        </h2>
+    </div>
+</div> --}}
     <!-- Image Showcases-->
     <section class="showcase">
         <div class="container-fluid p-0">
@@ -272,4 +279,3 @@
     </footer>
 
 </body>
-< --}}
