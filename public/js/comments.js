@@ -18,15 +18,22 @@ const newComment = async (event) => {
           }
           
         });
-        console.log(body);
+        const json = await response.json()
+        console.log(json);
+        // console.log(body);
         document.location.reload();
       }
 
 };
 
 document
-.querySelector('new-comment-form')
-.addEventListener('btn btn-success','btn btn-danger', newComment);
+.querySelector('#new-comment-form')
+.addEventListener('submit', newComment);
+
+
+// document.querySelector('#new-comment-form').addEventListener('click', function () {
+//   var newComment = document.getElementById('input[name="post-id"]')
+// })
 
 
 

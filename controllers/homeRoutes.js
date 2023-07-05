@@ -104,7 +104,7 @@ router.get('/', async (req, res) => {
 
     // Serialize data so the template can read it
     const comments = commentData.map((comment) => comment.get({ plain: true }));
-
+console.log(comments);
     // Pass serialized data and session flag into template
     res.render('homepage', { 
       comments, 

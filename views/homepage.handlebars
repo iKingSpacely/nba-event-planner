@@ -1,52 +1,48 @@
-<div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-        Eastern Conference
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="team-select1">
-        <li><a class="dropdown-item" href="http://localhost:3001" value="eastteam1">Wizards</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/CHA" value="eastteam2">Hornets</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/ATL" value="eastteam3">Hawks</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/MIA" value="eastteam4">Heat</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/ORL" value="eastteam5">Magic</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/NY" value="eastteam6">Knicks</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/PHI" value="eastteam7">Sixers</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/BKN" value="eastteam8">Nets</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/BOS" value="eastteam9">Celtics</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/TOR" value="eastteam10">Raptors</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/CHI" value="eastteam11">Bulls</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/CLE" value="eastteam12">Cavaliers</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/IND" value="eastteam13">Pacers</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/DET" value="eastteam14">Pistons</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/MIL" value="eastteam15">Bucks</a></li>
-    </ul>
-    {{!-- <button id="eastern" class="btn btn-primary">Submit</button> --}}
-{{!-- </div>
-<div class="dropdown"> --}}
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-        Western Conference 
-    </button> 
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2" id="team-select2">
-        <li><a class="dropdown-item" href="/api/result/sportsdata/MIN" value="westteam1">Timberwolves</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/UTA" value="westteam2">Jazz</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/OKC" value="westteam3">Thunder</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/POR" value="westteam4">Trailblazers</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/DEN" value="westteam5">Nuggets</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/MEM" value="westteam6">Grizzlies</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/HOU" value="westteam7">Rockets</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/NO" value="westteam8">Pelicans</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/SA" value="westteam9">Spurs</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/DAL" value="westteam10">Mavericks</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/GS" value="westteam11">Warriors</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/LAL" value="westteam12">Lakers</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/LAC" value="westteam13">Clippers</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/PHO" value="westteam14">Suns</a></li>
-        <li><a class="dropdown-item" href="/api/result/sportsdata/SAC" value="westteam15">Kings</a></li>
-    </ul>
-    {{!-- <button id="western" class="btn btn-primary">Submit</button> --}}
+<div>
+    {{!-- eastern conference --}}
+    <select id="team-select1">
+        <option value="east">Eastern Conference</option>
+        <option value="eastteam1">Wizards</option>
+        <option value="eastteam2">Hornets</option>
+        <option value="eastteam3">Hawks</option>
+        <option value="eastteam4">Heat</option>
+        <option value="eastteam5">Magic</option>
+        <option value="eastteam6">Knicks</option>
+        <option value="eastteam7">Sixers</option>
+        <option value="eastteam8">Nets</option>
+        <option value="eastteam9">Celtics</option>
+        <option value="eastteam10">Raptors</option>
+        <option value="eastteam11">Bulls</option>
+        <option value="eastteam12">Cavaliers</option>
+        <option value="eastteam13">Pacers</option>
+        <option value="eastteam14">Pistons</option>
+        <option value="eastteam15">Bucks</option>
+    </select>
+    <button id="eastern">Submit</button>
 </div>
-{{!-- <script src="/js/search.js"></script> --}}
-
-
+<div>
+    {{!-- western western conference --}}
+    <select id="team-select2">
+        <option value="west">Western Conference</option>
+        <option value="westteam1">Timberwolves</option>
+        <option value="westteam2">Jazz</option>
+        <option value="westteam3">Thunder</option>
+        <option value="westteam4">Trailblazers</option>
+        <option value="westteam5">Nuggets</option>
+        <option value="westteam6">Grizzlies</option>
+        <option value="westteam7">Rockets</option>
+        <option value="westteam8">Pelicans</option>
+        <option value="westteam9">Spurs</option>
+        <option value="westteam10">Mavericks</option>
+        <option value="westteam11">Warriors</option>
+        <option value="westteam12">Lakers</option>
+        <option value="westteam13">Clippers</option>
+        <option value="westteam14">Suns</option>
+        <option value="westteam15">Kings</option>
+    </select>
+    <button id="western">Submit</button>
+    <script src="/public/js/search.js"></script>
+</div>
 
 
 {{#each comments as |comment| }}
@@ -62,127 +58,186 @@
     </h2>
 </div>
 {{/each}}
-
-
-
-
+{{!--
 
 <body>
+    <!-- Navigation-->
 
-
-
-
-<section style="background-color: #e7effd;">
-  <div class="container my-5 py-5 text-dark">
-    <h2 class="mb-5">What other fans are saying</h2>
-    <div class="row d-flex justify-content-center">
-      <div class="col-md-11 col-lg-9 col-xl-7">
-        <div class="d-flex flex-start mb-4">
-          {{!-- <img class="rounded-circle shadow-1-strong me-3"
-            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar" width="65"
-            height="65" /> --}}
-          <div class="card w-100">
-            <div class="card-body p-4">
-              <div class="">
-                <h5>Johny Cash</h5>
-                <p class="small">3 hours ago</p>
-                <p>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
-                  ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus
-                  viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
-                  Donec lacinia congue felis in faucibus ras purus odio, vestibulum in
-                  vulputate at, tempus viverra turpis.
-                </p>
-
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="d-flex align-items-center">
-                    <a href="#!" class="link-muted me-2"><i class="fas fa-thumbs-up me-1"></i>132</a>
-                    <a href="#!" class="link-muted"><i class="fas fa-thumbs-down me-1"></i>15</a>
-                  </div>
-                  <a href="#!" class="link-muted"><i class="fas fa-reply me-1"></i> Reply</a>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div class="text-center text-white">
+                        <!-- Page heading-->
+                        <h1 class="mb-5">Generate more leads with a professional landing page!</h1>
+                        <!-- Signup form-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!-- Email address input-->
+                            <div class="row">
+                                <div class="col">
+                                    <input class="form-control form-control-lg" id="emailAddress" type="email"
+                                        placeholder="Email Address" data-sb-validations="required,email" />
+                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:required">
+                                        Email Address is required.</div>
+                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:email">Email
+                                        Address Email is not valid.</div>
+                                </div>
+                                <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton"
+                                        type="submit">Submit</button></div>
+                            </div>
+                            <!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted-->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                    <p>To activate this form, sign up at</p>
+                                    <a class="text-white"
+                                        href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
+                            </div>
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <div class="d-none" id="submitErrorMessage">
+                                <div class="text-center text-danger mb-3">Error sending message!</div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
+    </header>
+    <!-- Icons Grid-->
 
-        <div class="d-flex flex-start">
-          {{!-- <img class="rounded-circle shadow-1-strong me-3"
-            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(31).webp" alt="avatar" width="65"
-            height="65" /> --}}
-          <div class="card w-100">
-            <div class="card-body p-4">
-              <div class="">
-                <h5>Mindy Campbell</h5>
-                <p class="small">5 hours ago</p>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
-                  cumque doloribus dolorum dolor repellat nemo animi at iure autem fuga
-                  cupiditate architecto ut quam provident neque, inventore nisi eos quas?
-                </p>
-
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="d-flex align-items-center">
-                    <a href="#!" class="link-muted me-2"><i class="fas fa-thumbs-up me-1"></i>158</a>
-                    <a href="#!" class="link-muted"><i class="fas fa-thumbs-down me-1"></i>13</a>
-                  </div>
-                  <a href="#!" class="link-muted"><i class="fas fa-reply me-1"></i> Reply</a>
+    <!-- Image Showcases-->
+    <section class="showcase">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-lg-6 order-lg-2 text-white showcase-img"
+                    style="background-image: url('assets/img/bg-showcase-1.jpg')"></div>
+                <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                    <h2>Fully Responsive Design</h2>
+                    <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will
+                        look great on any device, whether it's a phone, tablet, or desktop the page will behave
+                        responsively!</p>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="card w-100">
-            <div class="card-body p-4">
-              <div class="">
-                {{#each comments}}
-                <h5 class="small mb-0 ms-2">{{user.name}}</h5>
-                <p class="small">{{format_date date_created}}</p>
-                <p>{{description}}</p>
-                {{/each}}
-              </div>
+            <div class="row g-0">
+                <div class="col-lg-6 text-white showcase-img"
+                    style="background-image: url('assets/img/bg-showcase-2.jpg')"></div>
+                <div class="col-lg-6 my-auto showcase-text">
+                    <h2>Updated For Bootstrap 5</h2>
+                    <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 5 is leading the
+                        way in mobile responsive web development! All of the themes on Start Bootstrap are now using
+                        Bootstrap 5!</p>
+                </div>
             </div>
-          </div>
+            <div class="row g-0">
+                <div class="col-lg-6 order-lg-2 text-white showcase-img"
+                    style="background-image: url('assets/img/bg-showcase-3.jpg')"></div>
+                <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                    <h2>Easy to Use & Customize</h2>
+                    <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand
+                        some deeper customization options. Out of the box, just add your content and images, and your
+                        new landing page will be ready to go!</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <section style="background-color: #2597d9;">
-  <div class="container my-5 py-5 text-dark">
-    <div class="new-comment-form">
-    <div class="row d-flex justify-content-center">
-      <div class="col-md-10 col-lg-8 col-xl-6">
-        <div class="card">
-          <div class="card-body p-4">
-            <div class="d-flex flex-start w-100">
-              {{!-- <img class="rounded-circle shadow-1-strong me-3"
-                src="" alt="avatar" width="65" //we want to change this to username
-                height="65" /> --}}
-              <div class="w-100">
-                <h5>What game are you going to?</h5>
-                <div class="form-outline">
-                  <input type="text" name="post-id" />
-                  <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
-                  {{!-- <label class="form-label" for="textAreaExample">What is your view?</label> --}}
+    </section>
+    <!-- Testimonials-->
+    <section class="testimonials text-center bg-light">
+        <div class="container">
+            <h2 class="mb-5">What people are saying...</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-1.jpg" alt="..." />
+                        <h5>Margaret E.</h5>
+                        <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+                    </div>
                 </div>
-                <div class="d-flex justify-content-between mt-3">
-                  <button type="submit" class="btn btn-success">Send</button>
-                  {{!-- <button type="button" class="btn btn-danger">
-                    Delete <i class="fas fa-long-arrow-alt-right ms-1"></i>
-                  </button> --}}
+                <div class="col-lg-4">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-2.jpg" alt="..." />
+                        <h5>Fred S.</h5>
+                        <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of
+                            super nice landing pages."</p>
+                    </div>
                 </div>
-              </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-3.jpg" alt="..." />
+                        <h5>Sarah W.</h5>
+                        <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to
+                            us!"</p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-    </div>
-  </div>
-</section>
-
-
+    </section>
+    <!-- Call to Action-->
+    <section class="call-to-action text-white text-center" id="signup">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <h2 class="mb-4">Ready to get started? Sign up now!</h2>
+                    <!-- Signup form-->
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- * * SB Forms Contact Form * *-->
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- This form is pre-integrated with SB Forms.-->
+                    <!-- To make this form functional, sign up at-->
+                    <!-- https://startbootstrap.com/solution/contact-forms-->
+                    <!-- to get an API token!-->
+                    <form class="form-subscribe" id="contactFormFooter" data-sb-form-api-token="API_TOKEN">
+                        <!-- Email address input-->
+                        <div class="row">
+                            <div class="col">
+                                <input class="form-control form-control-lg" id="emailAddressBelow" type="email"
+                                    placeholder="Email Address" data-sb-validations="required,email" />
+                                <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:required">
+                                    Email Address is required.</div>
+                                <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:email">
+                                    Email Address Email is not valid.</div>
+                            </div>
+                            <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton"
+                                    type="submit">Submit</button></div>
+                        </div>
+                        <!-- Submit success message-->
+                        <!---->
+                        <!-- This is what your users will see when the form-->
+                        <!-- has successfully submitted-->
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder">Form submission successful!</div>
+                                <p>To activate this form, sign up at</p>
+                                <a class="text-white"
+                                    href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                            </div>
+                        </div>
+                        <!-- Submit error message-->
+                        <!---->
+                        <!-- This is what your users will see when there is-->
+                        <!-- an error submitting the form-->
+                        <div class="d-none" id="submitErrorMessage">
+                            <div class="text-center text-danger mb-3">Error sending message!</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Footer-->
     <footer class="footer bg-light">
         <div class="container">
@@ -215,5 +270,3 @@
             </div>
         </div>
     </footer>
-
-</body>
