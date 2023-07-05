@@ -45,19 +45,7 @@
 </div>
 
 
-{{#each comments as |comment| }}
-<div>
-    <h2>
-        <p>
-            {{comment.description}}
-        </p>
-        {{!-- if comment.user.name doesn't work, remove it. down below --}}
-        <h3>
-            Created by {{comment.user.name}} on {{format_date comment.date_created}}
-        </h3>
-    </h2>
-</div>
-{{/each}}
+
 
 
 <body>
@@ -134,10 +122,8 @@
                 <div class="col-lg-6 order-lg-2 text-white showcase-img"
                     style="background-image: url('assets/img/bg-showcase-1.jpg')"></div>
                 <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                    <h2>Fully Responsive Design</h2>
-                    <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will
-                        look great on any device, whether it's a phone, tablet, or desktop the page will behave
-                        responsively!</p>
+                    <h2>What is Game Connect? </h2>
+                    <p class="lead mb-0">Use Game Connect to plan and coordinate meet up events to your favorite sporting events. Whether you want to party at the tailgate, finding people to go sit with, or just wanting to connect with other fans, Game Connect is here to help. </p>
                 </div>
             </div>
             <div class="row g-0">
@@ -162,38 +148,104 @@
             </div>
         </div>
     </section>
-    <!-- Testimonials-->
-    <section class="testimonials text-center bg-light">
-        <div class="container">
-            <h2 class="mb-5">What people are saying...</h2>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                        <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-1.jpg" alt="..." />
-                        <h5>Margaret E.</h5>
-                        <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
-                    </div>
+
+
+<section style="background-color: #e7effd;">
+  <div class="container my-5 py-5 text-dark">
+    <h2 class="mb-5">What other fans are saying</h2>
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-11 col-lg-9 col-xl-7">
+        <div class="d-flex flex-start mb-4">
+          {{!-- <img class="rounded-circle shadow-1-strong me-3"
+            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar" width="65"
+            height="65" /> --}}
+          <div class="card w-100">
+            <div class="card-body p-4">
+              <div class="">
+                <h5>Johny Cash</h5>
+                <p class="small">3 hours ago</p>
+                <p>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                  ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus
+                  viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+                  Donec lacinia congue felis in faucibus ras purus odio, vestibulum in
+                  vulputate at, tempus viverra turpis.
+                </p>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <a href="#!" class="link-muted me-2"><i class="fas fa-thumbs-up me-1"></i>132</a>
+                    <a href="#!" class="link-muted"><i class="fas fa-thumbs-down me-1"></i>15</a>
+                  </div>
+                  <a href="#!" class="link-muted"><i class="fas fa-reply me-1"></i> Reply</a>
                 </div>
-                <div class="col-lg-4">
-                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                        <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-2.jpg" alt="..." />
-                        <h5>Fred S.</h5>
-                        <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of
-                            super nice landing pages."</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                        <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-3.jpg" alt="..." />
-                        <h5>Sarah W.</h5>
-                        <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to
-                            us!"</p>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    <!-- Call to Action-->
+
+        <div class="d-flex flex-start">
+          {{!-- <img class="rounded-circle shadow-1-strong me-3"
+            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(31).webp" alt="avatar" width="65"
+            height="65" /> --}}
+          <div class="card w-100">
+            <div class="card-body p-4">
+              <div class="">
+                <h5>Mindy Campbell</h5>
+                <p class="small">5 hours ago</p>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
+                  cumque doloribus dolorum dolor repellat nemo animi at iure autem fuga
+                  cupiditate architecto ut quam provident neque, inventore nisi eos quas?
+                </p>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <a href="#!" class="link-muted me-2"><i class="fas fa-thumbs-up me-1"></i>158</a>
+                    <a href="#!" class="link-muted"><i class="fas fa-thumbs-down me-1"></i>13</a>
+                  </div>
+                  <a href="#!" class="link-muted"><i class="fas fa-reply me-1"></i> Reply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section style="background-color: #2597d9;">
+  <div class="container my-5 py-5 text-dark">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-6">
+        <div class="card">
+          <div class="card-body p-4">
+            <div class="d-flex flex-start w-100">
+              {{!-- <img class="rounded-circle shadow-1-strong me-3"
+                src="" alt="avatar" width="65" //we want to change this to username
+                height="65" /> --}}
+              <div class="w-100">
+                <h5>What game are you going to?</h5>
+                <div class="form-outline">
+                  <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
+                  {{!-- <label class="form-label" for="textAreaExample">What is your view?</label> --}}
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                  <button type="button" class="btn btn-success">Send</button>
+                  <button type="button" class="btn btn-danger">
+                    Delete <i class="fas fa-long-arrow-alt-right ms-1"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    {{!-- <!-- Call to Action-->
     <section class="call-to-action text-white text-center" id="signup">
         <div class="container position-relative">
             <div class="row justify-content-center">
@@ -244,7 +296,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- Footer-->
     <footer class="footer bg-light">
         <div class="container">
