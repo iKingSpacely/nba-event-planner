@@ -1,3 +1,4 @@
+
 .username {
     font-family: Georgia, 'Times New Roman', Times, serif !important;
     font-size: 20px !important;
@@ -24,4 +25,14 @@
 
 
 
+
+
+.cust {
+    font-family: 'Courgette', cursive !important; 
+}
+
+.custom {
+    font-family: 'Aladin', cursive !important;
+    font-size: 30px !important;
+}
 
