@@ -27,12 +27,14 @@ router.post('/savefav', withAuth, async (req, res) => {
 
 router.get('/sportsdata/:teamAbbr', async(req,res)=>{
   const response = await fetch(schedulesBasic);
+  
   const data = await response.json();
+  console.log(data);
   let teamName = req.params.teamAbbr.toUpperCase()
 
   // Filter games for the specified team
   const teamGames = data.filter(game => game.HomeTeam === teamName || game.AwayTeam === teamName);
-  console.log(teamGames);
+  console.log(teamGames.length);
 res.render('result',{teamGames})
 
   // return teamGames;
