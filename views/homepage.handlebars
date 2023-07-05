@@ -67,9 +67,9 @@
               <div class="card-body p-4">
                 <div class="">
                   {{#each comments}}
-                  <h5 class="small mb-0 ms-2">{{user.name}}</h5>
-                  <p class="small">{{format_date date_created}}</p>
-                  <p>{{description}}</p>
+                  <h5 class="small mb-0 ms-2 username">{{user.name}}</h5>
+                  <p class="desc">{{description}}</p>
+                  <p class="small-date">{{format_date date_created}}</p>
                   {{/each}}
                 </div>
               </div>

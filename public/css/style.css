@@ -1,0 +1,24 @@
+.username {
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 20px !important;
+    padding: 10px; /* Add padding of 10px to all sides */
+}
+
+.desc {
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 25px !important;
+    padding: 20px 15px; /* Add 20px padding to the top and bottom, 15px padding to the left and right */
+}
+
+.date {
+    padding-bottom: 105px !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 20px !important;
+}
+
+
+
+
+
+
+
