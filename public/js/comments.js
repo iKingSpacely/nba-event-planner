@@ -1,11 +1,12 @@
 //need to grab the comment, and fetch the form where the user are inputting the comments 
 
 const newComment = async (event) => {
-    event.preventDefault();
+  console.log('working');  
+  event.preventDefault();
 
     // const comment = document.querySelector('input[name="post-id"]').value;
     const body = document.querySelector('textarea[name="comment-body"]').value;
-
+  console.log(body);
     if (body) {
         const response = await fetch('/api/comments', {
           method: 'POST',
