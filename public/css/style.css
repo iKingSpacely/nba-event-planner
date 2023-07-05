@@ -1,18 +1,21 @@
 .username {
-    font-family: 'Courier New', Courier, monospace !important;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
     font-size: 20px !important;
-    padding: 10px; /* Add padding of 10px to all sides */
+    font-weight: bolder;
+    padding-left: 20px /* Add padding of 10px to all sides */
 }
 
 .desc {
-    font-family: 'Courier New', Courier, monospace !important;
-    font-size: 25px !important;
-    padding: 20px 15px; /* Add 20px padding to the top and bottom, 15px padding to the left and right */
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    font-size: 30px !important;
+    padding-left: 20px; /* Add 20px padding to the top and bottom, 15px padding to the left and right */
+    padding-bottom: -10px !important;
 }
 
 .date {
-    padding-bottom: 105px !important;
-    font-family: 'Courier New', Courier, monospace !important;
+    padding-left: 20px !important;
+    padding-bottom: 20px !important;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
     font-size: 20px !important;
 }
 
