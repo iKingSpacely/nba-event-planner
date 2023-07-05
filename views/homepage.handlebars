@@ -3,8 +3,8 @@
         Eastern Conference
     </button>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="team-select1">
-        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/WAS" value="eastteam1">Wizards</a></li>
-        <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/CHA" value="eastteam2">Hornets</a></li>
+        <li><a class="dropdown-item" href="/api/search/sportsdata/WAS" value="was">Wizards</a></li>
+        <li><a class="dropdown-item" href="/api/result/sportsdata/CHA" value="eastteam2">Hornets</a></li>
         <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/ATL" value="eastteam3">Hawks</a></li>
         <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/MIA" value="eastteam4">Heat</a></li>
         <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/ORL" value="eastteam5">Magic</a></li>
@@ -19,12 +19,12 @@
         <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/DET" value="eastteam14">Pistons</a></li>
         <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/MIL" value="eastteam15">Bucks</a></li>
     </ul>
-    <button id="eastern" class="btn btn-primary">Submit</button>
+    {{!-- <button id="eastern" class="btn btn-primary">Submit</button> --}}
 {{!-- </div>
 <div class="dropdown"> --}}
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-        Western Conference
-    </button>
+    {{!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+        Western Conference --}}
+    {{!-- </button> --}}
     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2" id="team-select2">
         <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/MIN" value="westteam1">Timberwolves</a></li>
         <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/UTA" value="westteam2">Jazz</a></li>
@@ -42,12 +42,12 @@
         <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/PHX" value="westteam14">Suns</a></li>
         <li><a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/SAC" value="westteam15">Kings</a></li>
     </ul>
-    <button id="western" class="btn btn-primary">Submit</button>
+    {{!-- <button id="western" class="btn btn-primary">Submit</button> --}}
 </div>
-<script src="/js/search.js"></script>
+{{!-- <script src="/js/search.js"></script> --}}
 
-
-
+<a class="dropdown-item" href="/api/result/sportsdata/WAS" >Wizards</a>
+<a class="dropdown-item" href="http://localhost:3001/api/search/sportsdata/MIN" value="westteam1">hello</a>
 {{#each comments as |comment| }}
 <div>
     <h2>
@@ -62,7 +62,7 @@
 </div>
 {{/each}}
 
-<script src="./public/js/search.js"></script>
+{{!-- <script src="./public/js/search.js"></script> --}}
 {{!-- <script src="./js/login.js"></script> --}}
 {{!-- <script src="./js/signup.js"></script> --}}
 {{!-- <script src=

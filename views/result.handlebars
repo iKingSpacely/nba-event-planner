@@ -1,13 +1,15 @@
+{{!-- 
+<div>
 
 <div>
 
-{{!-- <div>
-
 
 sports data
-{{#each teamGames}}
+
+ `
+            `;
 <h1>{{this.Day}}</h1>
-{{/each}}
+
     
 
 </div>
@@ -15,9 +17,25 @@ sports data
 </div> --}}
 
 <div class="accordion accordion-flush" id="resultsPopulate">
- 
+ {{#each teamGames}}
+ <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#${day}-${index}" aria-expanded="false" aria-controls="${day}-${index}">
+                  {{this.HomeTeam}} vs{{this.AwayTeam}}
+                </button>
+              </h2>
+              <div id="${day}-${index}" class="accordion-collapse collapse" data-bs-parent="#${parentID}">
+                <div class="accordion-body">
+                  Home Team:{{this.HomeTeam}}<br>
+                  Home Score:{{this.HomeTeamScore}}<br>
+                  {{!-- Away Team:{AwayTeam}<br> --}}
+                  {{!-- Away Score:{AwayTeamScore}<br> --}}
+                </div>
+              </div>
+            </div>
+ {{/each}}
   
 </div>
 
-<script src="/js/result.js"></script>
+{{!-- <script src="/js/result.js"></script> --}}
 
