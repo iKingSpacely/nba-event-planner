@@ -57,7 +57,7 @@
 
 
 <body>
-  <section style="background-color: #e7effd;">
+  <section style="background-color: #ffffff;">
     <div class="container my-5 py-5 text-dark">
       <h2 class="mb-5">What other fans are saying</h2>
       <div class="row d-flex justify-content-center">
@@ -67,9 +67,9 @@
               <div class="card-body p-4">
                 <div class="">
                   {{#each comments}}
-                  <h5 class="small mb-0 ms-2">{{user.name}}</h5>
-                  <p class="small">{{format_date date_created}}</p>
-                  <p>{{description}}</p>
+                  <h5 class="small mb-0 ms-2 username">User: {{user.name}}</h5>
+                  <p class="desc">{{description}}</p>
+                  <p class="date">{{format_date date_created}}</p>
                   {{/each}}
                 </div>
               </div>
@@ -80,7 +80,7 @@
     </div>
   </section>
 
-  <section style="background-color: #2597d9;">
+  <section style="background-color: #ffffff;">
     <div class="container my-5 py-5 text-dark">
       <form id="new-comment-form">
         <div class="row d-flex justify-content-center">
@@ -92,6 +92,7 @@
                     change this to username height="65" /> --}}
                   <div class="w-100">
                     <h5>What game are you going to?</h5>
+                    
                     <div class="form-outline">
                       {{!-- <input type="text" name="post-id" /> --}}
                       <textarea class="form-control" id="textAreaExample" rows="4" name="comment-body"></textarea>
