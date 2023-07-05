@@ -209,6 +209,30 @@
               </div>
             </div>
           </div>
+          <div class="card w-100">
+            <div class="card-body p-4">
+              <div class="">
+                {{#each comments}}
+                <div class="card mb-4">
+                    <h5></h5>
+                    <div class="card-body">
+                        <p>{{description}}</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex flex-row align-items-center">
+                                <p class="small mb-0 ms-2">{{user.name}}</p>
+                            </div>
+                            <div class="d-flex flex-row align-items-center">
+                                <p class="small text-muted mb-0">Created On</p>
+                                <p class="small text-muted mb-0">{{format_date date_created}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -245,58 +269,38 @@
     </div>
   </div>
 </section>
-    {{!-- <!-- Call to Action-->
-    <section class="call-to-action text-white text-center" id="signup">
-        <div class="container position-relative">
-            <div class="row justify-content-center">
-                <div class="col-xl-6">
-                    <h2 class="mb-4">Ready to get started? Sign up now!</h2>
-                    <!-- Signup form-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
-                    <form class="form-subscribe" id="contactFormFooter" data-sb-form-api-token="API_TOKEN">
-                        <!-- Email address input-->
-                        <div class="row">
-                            <div class="col">
-                                <input class="form-control form-control-lg" id="emailAddressBelow" type="email"
-                                    placeholder="Email Address" data-sb-validations="required,email" />
-                                <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:required">
-                                    Email Address is required.</div>
-                                <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:email">
-                                    Email Address Email is not valid.</div>
-                            </div>
-                            <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton"
-                                    type="submit">Submit</button></div>
-                        </div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                <p>To activate this form, sign up at</p>
-                                <a class="text-white"
-                                    href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                            </div>
-                        </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage">
-                            <div class="text-center text-danger mb-3">Error sending message!</div>
-                        </div>
-                    </form>
+
+<div class="row d-flex justify-content-center">
+    <div class="col-md-8 col-lg-6">
+        <div class="card shadow-0 border" style="background-color: #f0f2f5;">
+            <div class="card-body p-4">
+                <div class="form-outline mb-4">
+                    <input type="text" id="addANote" class="form-control" placeholder="Type comment..." />
+                    <label class="form-label" for="addANote">+ Add a note</label>
                 </div>
+
+                {{#each comments}}
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <p>{{description}}</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex flex-row align-items-center">
+                                <p class="small mb-0 ms-2">{{user.name}}</p>
+                            </div>
+                            <div class="d-flex flex-row align-items-center">
+                                <p class="small text-muted mb-0">Created On</p>
+                                <p class="small text-muted mb-0">{{format_date date_created}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
             </div>
         </div>
-    </section> --}}
+    </div>
+</div>
+
     <!-- Footer-->
     <footer class="footer bg-light">
         <div class="container">
